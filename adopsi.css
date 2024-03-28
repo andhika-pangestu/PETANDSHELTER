@@ -14,11 +14,13 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  display: flex;
   padding: 9px 85px 9px 66px;
   align-items: center;
   gap: 380px;
   flex-shrink: 0;
+  position: fixed;
+  z-index: 1000;
+  width: 93%;
 }
 .navbar-logo {
   width: 100px;
@@ -59,7 +61,7 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 20px;
+  left: 70px;
   text-align: left;
   
 }
