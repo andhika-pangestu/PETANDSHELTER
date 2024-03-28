@@ -21,7 +21,14 @@ body {
   position: fixed;
   z-index: 1000;
   width: 93%;
-}
+  backdrop-filter: blur(4px); /* Efek blur untuk membuat efek glass */
+  transition: background-color 0.3s ease; /* Transisi warna latar belakang */
+  }
+  
+  .navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.8);/* Warna latar belakang solid saat di-scroll */
+  }
+  
 .navbar-logo {
   width: 100px;
   height: auto;
@@ -230,89 +237,128 @@ body {
   margin: 0;
 }
 
+header {  
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+
 .section3 {
-  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
   background-color: #F1B703;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-  margin-top: 30px;
-}
-.logo {
-  width: 250px;
-  height: 250px;
-}
-.section3-text {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-}
-.section3-text pre{
-  font-family: Helvetica, sans-serif;
-}
-.section3-text .normal{
   color: #FFF;
-  text-align: center;
+}
+
+.section3  h4 {
   font-family: Helvetica;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 160%; /* 32px */
-
+  margin-bottom: 5px; /* Mengurangi margin bottom */
+  line-height: 1; /* Mengatur line height menjadi 1 */
+  width: 490px;
+  margin-left: auto; /* Mengatur margin kiri menjadi otomatis */
+  margin-right: auto; /* Mengatur margin kanan menjadi otomatis */
 }
-.section3-text .big{
-  color: #FFF;
-  text-align: center;
+
+.section3 h2 {
   font-family: "Helvetica Rounded";
   font-size: 40px;
   font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-
+  font-weight: 100;
+  margin-bottom: -20px; /* Mengurangi margin bottom */
+  margin-top: 10px; /* Mengurangi margin bottom */
+  line-height: 1; /* Mengatur line height menjadi 1 */
 }
 
-.circle-photos {
-  display: inline-flex;
-  align-items: center;
-}
-.circle-photo {
+.section3-card {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #F1B703;
 }
-.circle-photo img {
-  width: 250px;
-  height: 250px;
+
+.section3-card .card {
+  text-align: center;
+  width: 350px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  border: none; /* Menghilangkan garis */
+  box-shadow: none; /* Menghilangkan bayangan */
+}
+
+.section3-card .card img {
   border-radius: 50%;
+  width: 254px;
+  height: 254px;
+  object-fit: cover;
+}
+
+.section3-card .card .card-info {
+  padding: 10px;
+  margin: auto;
+
+}
+
+.section3-card .card h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.section3-card .card h2 {
+  font-size: 24px;
   margin-bottom: 10px;
 }
-.photo-caption {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  font-family: Helvetica, sans-serif;
-}
-.read-more {
-  background-color: #fff; 
-  border-radius: 30px; /* Radius sudut */
-  color: #F1B703; /* Warna teks */
+
+.section3-card .card a {
+  display: block;
+  margin-top: 10px;
   text-decoration: none;
+  color: blue;
+  font-weight: bold;
+}
+
+
+footer {
+  position: relative;
+  background-image: url('img/wave\ \(1\).svg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 200px 0 100px;
+  background-color: #fff;
+}
+
+.footer-logo {
+  display: inline-block; /* Mengatur logo agar dapat diatur ukuran lebarnya */
+  margin: 0 auto; /* Mengatur logo berada di tengah */
+}
+
+.footer-logo img {
+  padding-top: 100px;
+  max-width: 100px; /* Mengatur lebar maksimum logo */
+  max-height: 100px; /* Mengatur tinggi maksimum logo */
+}
+.social-icons {
   display: flex;
-  width: 132px;
-  padding: 1px 19px;
   justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 160%; /* 32px */
 }
-.read-more:hover {
-  text-decoration: underline;
+
+.social-icons i {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  margin: 0 10px; /* Jarak antara ikon sosial */
 }
+
+.footer .copyright {
+  margin-top: 90px;
+  font-size: 14px;
+  color: #888;
+  text-align: center; /* Menyusun teks menjadi rata tengah */
+}
+
 
 @media (max-width: 768px) {
   .navbar {
