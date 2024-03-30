@@ -98,7 +98,12 @@ p {
   gap: 23px 10px;
   flex-wrap: wrap;
 }
-
+#orange{
+  color: var(--orange, #F1B703);
+}
+#primary {
+  color: var(--primary, #9AD2D1);
+}
 .texthero {
 width: 659px;
 flex-shrink: 0;
@@ -358,7 +363,7 @@ align-items: center;
 gap: 107px;
 flex-shrink: 0;
 background: var(--orange, #F1B703);
-padd
+
 }
 
 .rescuedesc{
@@ -383,6 +388,9 @@ flex-shrink: 0;
 
 }
 
+#accent{
+  color: var(--accents, #F06765);
+}
 #rescuenow{
   border-radius: 20px;
   background: var(--accents, #F06765);
@@ -403,6 +411,7 @@ line-height: normal;
 flex-direction: column;
 align-items: center;
 gap: 49px;
+padding-top: 100px;
 }
 
 #textfitur {
@@ -415,13 +424,13 @@ align-items: flex-start;
 gap: 27px;
 }
 
-.card {
-  display: flex;
+.card2 {
+display: flex;
 padding: 60px;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-gap: 10px;
+gap: 30px;
 border-radius: 30px;
 border: 1px solid var(--Secondary, #56A69D);
 background: var(--light, #FFF);
@@ -434,27 +443,28 @@ box-shadow: -1px 5px 7px 0px rgba(0, 0, 0, 0.25);
   border: 1px solid var(--Secondary, #56A69D);
 
 }
+#donasi i{ 
+  background-color: solid var(--Secondary, #56A69D);
+
+}
+
 
 #acara{
   border: 1px solid var(--accents, #F06765);
 }
 
-#Tips{
+#tips{
   border: 1px solid var(--orange, #F1B703);
 }
 
-.contain-card {
-  display: flex;
-height: 281px;
-flex-direction: column;
-align-items: center;
-gap: 34px;
-}
 
 .icon {
-width: 200px;
-height: 200px;
+width: 40px;
+height: 40px;
 flex-shrink: 0;
+}
+.icon i {
+  font-size: 40px; /* Atur ukuran ikon sesuai kebutuhan */
 }
 
 .card-desc {
