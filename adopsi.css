@@ -25,7 +25,7 @@ body {
   transition: background-color 0.3s ease; /* Transisi warna latar belakang */
   }
   
-  .navbar.scrolled {
+.navbar.scrolled {
     background-color: rgba(255, 255, 255, 0.8);/* Warna latar belakang solid saat di-scroll */
   }
   
@@ -63,15 +63,17 @@ body {
   background-size: cover;
   background-position: center;
   color: white;
+  padding-top: 100px; /* Atur padding-top agar konten di bawah navbar tidak tertutupi */
 }
+
 .text {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: 70px;
   text-align: left;
-  
 }
+
 .text h1 {
   font-size: 36px;
   margin-bottom: 10px;
@@ -299,12 +301,12 @@ header {
 .section3-card .card .card-info {
   padding: 10px;
   margin: auto;
-
+  color: #FFF;
 }
 
-.section3-card .card h4 {
+.section3-card .card p {
   font-size: 16px;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
 }
 
 .section3-card .card h2 {
@@ -313,11 +315,15 @@ header {
 }
 
 .section3-card .card a {
-  display: block;
-  margin-top: 10px;
-  text-decoration: none;
-  color: blue;
-  font-weight: bold;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 32px */
+  border-radius: 30px;
+  background: #FFF;
+  color: #F1B703;
+  padding: 8px 19px;
+  text-decoration: none; /* Hapus garis bawah */
 }
 
 
@@ -327,7 +333,7 @@ footer {
   background-size: cover;
   background-position: center;
   text-align: center;
-  padding: 200px 0 100px;
+  padding: 100px 0 50px;
   background-color: #fff;
 }
 
@@ -344,6 +350,10 @@ footer {
 .social-icons {
   display: flex;
   justify-content: center;
+}
+
+.social-icons a {
+  color: black; /* mengatur warna ikon menjadi putih */
 }
 
 .social-icons i {
