@@ -12,6 +12,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 100px;
+    max-width: 1440px;
 }
 
 h5 {
@@ -34,35 +35,32 @@ p {
 }
 
 .navbar {
-  background-color: #fff;
-  overflow: hidden;
+  position: fixed; /* Menggunakan posisi tetap agar navbar tetap di atas */
+  top: 0; /* Menempatkan navbar di bagian atas */
+  left: 0; /* Menempatkan navbar di bagian kiri */
   display: flex;
+  width: 100%; /* Lebar 100% untuk mengisi seluruh lebar layar */
+  height: 85px;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  display: flex;
-  padding: 9px 85px 9px 66px;
-  align-items: center;
-  gap: 380px;
-  flex-shrink: 0;
-  position: fixed; /* Menjadikan navbar tetap terpasang */
-  width: 100%; /* Lebar navbar 100% dari lebar layar */
-  top: 0; /* Meletakkan navbar di bagian atas layar */
-  z-index: 9999; /* Menempatkan navbar di atas semua objek */
+  background: var(--light, #FFF);
+  z-index: 9999;
 }
 
 .navbar-logo {
-  width: 100px;
-  height: auto;
+  margin: 90PX;
+  width: 61px;
+  height: 61px;
 }
+
 .navbar-submenu {
   display: flex;
+  width: 786px;
+  height: 32px;
   align-items: center;
   gap: 61px;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 160%; /* 32px */
 }
+
 .navbar-submenu a {
   color: #000;
   text-decoration: none;
@@ -76,13 +74,29 @@ p {
   border-bottom: 2px solid black;
   font-size: 21px;
 }
+@media screen and (min-width: 2560px) {
+  .navbar {
+    left: 0; /* Navbar kembali ke kiri saat layar lebih besar dari 2560px */
+    transform: none; /* Reset transform */
+    justify-content: center; /* Menengahkan navbar pada layar besar */
+  }
+}
+
+/* Media Queries untuk layar berukuran 1024px */
+@media screen and (max-width: 1024px) {
+  .navbar {
+    left: 0; /* Navbar kembali ke kiri saat layar lebih kecil dari 1024px */
+    transform: none; /* Reset transform */
+    justify-content: center; /* Menengahkan navbar pada layar kecil */
+  }
+}
+
 
 /* hero */
 
 .hero {
   display: flex;
-  width: 1435px;
-  padding-left: 70px;
+  width: 1420px;
   align-items: center;
   align-content: space-between;
   column-gap: 143px;
@@ -93,6 +107,7 @@ p {
 .texthead {
   display: flex;
   width: 659px;
+  padding-left: 70px;
   align-items: center;
   align-content: center;
   gap: 23px 10px;
@@ -139,11 +154,12 @@ flex-shrink: 0;
 }
 
 .bg-hero {
-  width: 562px;
-  height: 679px;
+height: 679px;
+flex: 1 0 0;
   flex-shrink: 0;
   border-radius: 340px 0px 0px 340px;
 background: var(--orange, #F1B703);
+max-width: 100%;
 
 /* card-shadow */
 box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.08);
@@ -155,11 +171,27 @@ padding: 18px 24px;
 justify-content: center;
 align-items: center;
 gap: 10px;
+
 }
 
+.button a{
+  text-decoration: none;
+  color: white;
+  
+}
 #adopt{
-  border-radius: 20px;
+  border-radius: 30px;
   background: var(--Secondary, #56A69D);
+}
+
+#adopt a {
+  text-decoration: none; /* Menghapus garis bawah pada tautan di dalam elemen #adopt */
+}
+
+#adopt:hover{
+  border-radius: 30px;
+  background: var(--Secondary,  #F1B703);
+  color: #fff;
 }
 
 .paragraf reg2 {
@@ -203,11 +235,19 @@ flex-shrink: 0;
   top: 213px;
   left:1047px
 }
+.pop-up {
+  transition: transform 0.3s ease;
+}
+
+.pop-up.small {
+  transform: scale(0.); /* Atur ukuran skala kecil */
+}
+
 
 .card {
   border-radius: 30px;
- 
 }
+
 .manfaat {
 display: inline-flex;
 padding: 50px 70px;
@@ -278,7 +318,6 @@ line-height: normal;
   flex-direction: column;
   align-items: flex-start;
   gap: 6px;
-
 }
 
 h2 {
@@ -287,7 +326,7 @@ h2 {
   font-style: normal;
   font-weight: 700;
   line-height: normal; 
-  margin: 5px;
+  margin: 2px;
 }
 
 #headbox {
@@ -329,10 +368,29 @@ height: 332px;
  width: 330px;
 }
 
+#prosedur li {
+  animation: slideInLeft 0.5s ease forwards;
+}
+
+@keyframes slideInLeft {
+  0% { opacity: 0; transform: translateX(-20px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+/* Terapkan class 'slide-in' pada setiap item list */
+.slide-in {
+  opacity: 0;
+  animation: slideInLeft 0.5s ease forwards;
+}
 
 #syarat {
-  border-radius: 20px;
+  border-radius: 30px;
   border: 2px solid var(--orange, #F1B703);
+}
+
+.buttonsk a{
+  text-decoration: none ;
+  color: black;
 }
 
 .buttonsk {
@@ -343,24 +401,36 @@ height: 332px;
   align-items: center;
   gap: -10px;
   flex-shrink: 0;
-  border-radius: 20px;
-border: 2px solid var(--orange, #F1B703);
-color: var(--orange, #F1B703);
+  border-radius: 30px;
+  border: 2px solid var(--orange, #F1B703);
+  color: var(--orange, #F1B703);
 
 }
-
+.buttonsk:hover {
+  background-color: var(--orange, #F1B703); /* Mengubah warna background saat dihover */
+  color: var(--light, #FFF); /* Mengubah warna teks saat dihover */
+}
 .sk {
   color: var(--orange, #F1B703);
 
 }
 
+.toy {
+  width: 220px;
+height: 209px;
+flex-shrink: 0;
+position: absolute;
+top: 2600px;
+left: 1170px;
+background:url(public/images/toy.png) ;
+}
 .rescue {
 display: flex;
 width: 1440px;
 height: 560px;
 justify-content: center;
 align-items: center;
-gap: 107px;
+gap: 100px;
 flex-shrink: 0;
 background: var(--orange, #F1B703);
 
@@ -368,13 +438,13 @@ background: var(--orange, #F1B703);
 
 .rescuedesc{
   display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 41px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
 
-}
+}s
 .shelter {
-  width: 510px;
+
 height: 688px;
 flex-shrink: 0;
 }
@@ -382,36 +452,41 @@ flex-shrink: 0;
 
 
 .cat {
-  width: 269px;
+width: 269px;
 height: 788px;
 flex-shrink: 0;
+}
 
+.food {
+  width: 210px;
+  height: 439px;
+  flex-shrink: 0;
+  background: url(public/images/food-1.png);
+  position: absolute;
+  top: 1301px;
+  left:1190px;
 }
 
 #accent{
   color: var(--accents, #F06765);
 }
 #rescuenow{
-  border-radius: 20px;
+  border-radius: 30px;
   background: var(--accents, #F06765);
   color: white;
 }
 
-h2 {
-/* heading/2 */
-font-family: "Helvetica Rounded";
-font-size: 40px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+#rescuenow:hover {
+  background: var(--Secondary, #56A69D);
 }
 
 .fitur{
-  display: flex;
+display: flex;
 flex-direction: column;
 align-items: center;
 gap: 49px;
 padding-top: 100px;
+max-width: 1284px;
 }
 
 #textfitur {
@@ -419,35 +494,37 @@ padding-top: 100px;
 }
 
 .cards {
-  display: flex;
+display: flex;
 align-items: flex-start;
-gap: 27px;
+gap: 25px;
+max-width: 1440;
 }
 
 .card2 {
-display: flex;
-padding: 60px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 30px;
-border-radius: 30px;
-border: 1px solid var(--Secondary, #56A69D);
-background: var(--light, #FFF);
+  display: flex;
+  padding: 60px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 30px;
+  border: 1px solid var(--Secondary, #56A69D);
+  background: var(--light, #FFF);
+  box-shadow: -1px 5px 7px 0px rgba(0, 0, 0, 0.25);
+  align-self: stretch;
+  text-decoration: none;
+  color: black;
+  transition: transform 0.3s ease-in-out; /* Menggunakan fungsi ease-in-out untuk transisi yang lebih smooth */
+}
 
-/* Shadow */
-box-shadow: -1px 5px 7px 0px rgba(0, 0, 0, 0.25);
+.texthero {
+  transition: opacity 0.8s ease; /* Efek transisi opacity */
 }
 
 #donasi{
   border: 1px solid var(--Secondary, #56A69D);
 
 }
-#donasi i{ 
-  background-color: solid var(--Secondary, #56A69D);
-
-}
-
 
 #acara{
   border: 1px solid var(--accents, #F06765);
@@ -455,6 +532,25 @@ box-shadow: -1px 5px 7px 0px rgba(0, 0, 0, 0.25);
 
 #tips{
   border: 1px solid var(--orange, #F1B703);
+}
+#donasi:hover {
+  background-color: var(--orange, #F1B703);
+  color: #fff; /* Mengubah warna teks saat di-hover */
+  transform: scale(1.1); /* Memperbesar kartu saat di-hover */
+}
+
+/* Hover effect untuk elemen dengan id #acara */
+#acara:hover {
+  background-color: var(--Secondary, #56A69D);
+  color: #fff; /* Mengubah warna teks saat di-hover */
+  transform: scale(1.1); /* Memperbesar kartu saat di-hover */
+}
+
+/* Hover effect untuk elemen dengan id #tips */
+#tips:hover {
+  background-color: var(--accents, #F06765);
+  color: #fff; /* Mengubah warna teks saat di-hover */
+  transform: scale(1.1); /* Memperbesar kartu saat di-hover */
 }
 
 
@@ -483,4 +579,43 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 }
+
+.shelterbox {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 30px;
+max-width: 1263px;
+
+}
+
+.headshelter h2{
+  width: 600px;
+}
+
+.rabbit {
+  width: 340px;
+height: 399px;
+}
+
+.bird 
+{
+  width: 290px;
+height: 290px;
+}
+
+.contentshelter {
+  display: flex;
+align-items: center;
+gap: 80px;
+}
+
+.footer {
+width: 1440px;
+height: 269px;
+flex-shrink: 0;
+fill: var(--accents, #F06765);
+align-self: stretch;
+}
+
 

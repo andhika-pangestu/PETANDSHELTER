@@ -8,38 +8,38 @@
     <link rel="stylesheet" href="Style.css"> 
 </head>
 <body>
-    <nav class="navbar">
-        <img src="img/icon.png" alt="Logo" class="navbar-logo">
-        <div class="navbar-submenu">
-            <a href="#">Donasi</a>
-            <a href="#">Tentang</a>
-            <a href="adopsi.html" target="_blank">Adopsi</a>
-            <a href="kalender.html" target="_blank">Acara</a>
-            <a href="#">Shelter</a>
-            <a href="#">Tips</a>
-            <a href="#">Rescue</a>
-        </div>
-    </nav>
+  <nav class="navbar">
+    <img src="img/icon.png" alt="Logo" class="navbar-logo">
+    <div class="navbar-submenu">
+        <a href="#">Tentang</a>
+        <a href="#">Donasi</a>
+        <a href="adopsi.html" target="_blank" >Adopsi</a>
+        <a href="kalender.html" target="_blank">Acara</a>
+        <a href="#">Shelter</a>
+        <a href="#">Tips</a>
+        <a href="#">Rescue</a>
+    </div>
+  </nav> 
 
     <div class="hero">
         <div class="texthead">
-            <div class="texthero">
+            <div class="texthero" id="heroText">
                 Berikan Cinta Bangun Kebahagiaan
             </div>
             <div class="paragraf reg3">
                 Rumah bagi hewan peliharaan yang mencari kasih sayang dan perlindungan. Temukan informasi adopsi dan tips perawatan hewan peliharaan terbaru bersama kami!
             </div>
             <div class="button" id="adopt">
-                <div class="paragraf reg2" id="light">
-                    Adopsi Sekarang
-                </div>
-            </div>
+              <a href="halamanlain.html" class="paragraf reg2" id="light">
+                  Adopsi Sekarang
+              </a>
+          </div>
         </div>
         <div class="bg-hero"></div>
     </div>
-    <div class="doghero"></div>
-    <div class="cathero"></div>
-
+    <div class="doghero pop-up"></div>
+    <div class="cathero pop-up"></div>
+    <div class="food"></div>
     <div class="manfaat card">
         <div class="quote">
             <h3>Memberikan kasih sayang kepada hewan-hewan</h3>
@@ -70,7 +70,7 @@
       </div>
 
       <div class="paragraf-reg2" id="prosedur">
-        <ul >
+        <ul>
             <li>Pilih hewan yang akan diambil</li>
             <li>Penuhi syarat dan ketentuan</li>
             <li>Jadwalkan pengambilan dengan shelter</li>
@@ -78,13 +78,12 @@
         </ul>
 
         <div class="buttonsk" id="paragraf-reg3 sk">
-          Syarat dan ketentuan
+          <a href="halamanlain.html">Syarat dan ketentuan</a>
         </div>
       </div>
-
-  
     </div>
 
+    <div class="toy"></div>
     <div class="rescue">
       <div class="shelter">
         <img src="public/images/shelter-1.png" alt="Shelter">
@@ -95,9 +94,7 @@
           Ayo bergabung dengan kami dalam menyelamatkan hewan peliharaan! Gunakan website kami untuk melaporkan hewan yang membutuhkan bantuan dengan cepat dan mudah. Bersama-sama, kita bisa menjadi penyelamat bagi hewan-hewan yang butuh pertolongan!
         </div>
         <div class="button" id="rescuenow">
-          <div class="paragraf-reg2">
-            Rescue Now
-          </div>
+           <a href="rescue.html" >Rescue Now </a>
         </div>
       </div>
       <div class="cat">
@@ -108,36 +105,66 @@
     <div class="fitur" >
       <h2 id="accent"> Berikan Pertolongan Kamu!</h2>
       <div class="cards" >
-     
-      <div class="card2" id="donasi">
-        <div class="icon" id="primary" >
-          <i class="fa-solid fa-wallet"></i>
+        <a href="donasi.html" class="card2" id="donasi">
+          <div class="icon" id="primary">
+            <i class="fa-solid fa-wallet fa-bounce"></i>
+          </div>
+          <div class="paragraf-bold">DONASI</div>
+          <div class="card-desc">
+            Ayo berikan donasi untuk mendukung penyelamatan hewan peliharaan! Dengan kontribusi Anda, kita bisa memberikan perlindungan dan perawatan yang mereka butuhkan. Yuk, bergabunglah dalam misi kebaikan ini!
+          </div>
+        </a>
+        <a href="acara.html" class="card2" id="acara">
+          <div class="icon" id="accent">
+            <i class="fa-solid fa-calendar-days fa-flip"></i>
+          </div>
+          <div class="paragraf-bold">ACARA</div>
+          <div class="card-desc">
+            Ayo cari tahu beragam acara yang dapat mendukung perlindungan dan kesejahteraan hewan peliharaan! Mulai dari lomba-lomba yang mengedukasi tentang tanggung jawab memiliki hewan, informasi mengenai cara merawat hewan dengan baik, hingga program vaksinasi untuk menjaga kesehatan mereka.
+          </div>
+        </a>
+        <a href="tips.html" class="card2" id="tips">
+          <div class="icon" id="orange">
+            <i class="fa-solid fa-lightbulb fa-bounce"></i>
+          </div>
+          <div class="paragraf-bold">TIPS</div>
+          <div class="card-desc">
+            Kami telah menyusun berbagai tips dan trik yang berguna bagi para pemilik hewan peliharaan. Dari cara merawat kebersihan hingga metode pelatihan yang efektif, kami berupaya memberikan panduan yang komprehensif untuk memastikan kesejahteraan dan kebahagiaan hewan kesayangan Anda.
+          </div>
+        </a>
+        
+  </div> 
+
+  <div class="shelterbox">
+    <div class="headshelter">
+    <h2>CARI, PILIH, AMBIL & RAWAT HEWAN PELIHARAANMU</h2>
+  </div>
+    <div class="contentshelter">
+        <div class="rabbit">
+            <img src="public/images/rabbit.png" alt="kelinci">
         </div>
-        <div class="paragraf-bold">DONASI</div>
-        <div class="card-desc">
-          Ayo berikan donasi untuk mendukung penyelamatan hewan peliharaan! Dengan kontribusi Anda, kita bisa memberikan perlindungan dan perawatan yang mereka butuhkan. Yuk, bergabunglah dalam misi kebaikan ini!
+        <div class="rescuedesc">
+            <h2 id="headshelter">CARI SHELTER</h2>
+            <div class="paragraf-reg2" id="descbox">
+                Temukan shelter di sekitar kamu dan lihat berbagai hewan yang tersedia untuk diadopsi. Dari kucing dan anjing yang lucu hingga kelinci yang menggemaskan, ada beragam pilihan untuk memperluas keluarga Anda dengan hewan peliharaan yang membutuhkan kasih sayang.
+            </div>
+            <div class="button" id="rescuenow">
+              <a href="rescue.html" >Temukan </a>
+           </div>
         </div>
-      </div>
-      <div class="card2" id="acara">
-        <div class="icon" id="accent">
-          <i class="fa-solid fa-wallet"></i>
-        </div>
-        <div class="paragraf-bold">ACARA</div>
-        <div class="card-desc">
-          Ayo berikan donasi untuk mendukung penyelamatan hewan peliharaan! Dengan kontribusi Anda, kita bisa memberikan perlindungan dan perawatan yang mereka butuhkan. Yuk, bergabunglah dalam misi kebaikan ini!
-        </div>
-      </div>
-      <div class="card2 acara" id="tips">
-        <div class="icon" id="orange">
-          <i class="fa-solid fa-wallet"></i>
-        </div>
-        <div class="paragraf-bold">TIPS</div>
-        <div class="card-desc">
-          Ayo berikan donasi untuk mendukung penyelamatan hewan peliharaan! Dengan kontribusi Anda, kita bisa memberikan perlindungan dan perawatan yang mereka butuhkan. Yuk, bergabunglah dalam misi kebaikan ini!
-        </div>
+        <div class="bird">
+          <img src="public/images/bird.png" alt="kelinci">
       </div>
     </div>
-  </div> 
+</div>
+</div>
+
+<div class="footer">
+  <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="269" viewBox="0 0 1440 269" fill="none">
+    <path d="M0 0L142.352 27.2841C167.224 32.0513 192.776 32.0513 217.648 27.2841L322.352 7.21588C347.224 2.44868 372.776 2.44868 397.648 7.21588L502.352 27.2841C527.224 32.0513 552.776 32.0513 577.648 27.2841L682.352 7.21588C707.224 2.44868 732.776 2.44868 757.648 7.21588L862.352 27.2841C887.224 32.0513 912.776 32.0513 937.648 27.2841L1042.35 7.21588C1067.22 2.44868 1092.78 2.44868 1117.65 7.21588L1222.35 27.2841C1247.22 32.0513 1272.78 32.0513 1297.65 27.2841L1440 0V346H1260H1080H900H720H540H360H180H0V0Z" fill="#F06765"/>
+  </svg>
+</div>
+
 
    
 
