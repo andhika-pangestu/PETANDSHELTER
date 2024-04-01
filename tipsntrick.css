@@ -1,0 +1,294 @@
+.navbar {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 56px;
+    padding: 9px 10px 9px 50px;
+    align-items: center;
+    background-color: white;
+    color: black;
+    z-index: 1000;
+}
+
+.navbar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px); /* Efek blur pada latar belakang */
+    -webkit-backdrop-filter: blur(10px); /* Untuk mendukung Safari */
+    z-index: -1; /* Mengatur kedalaman z-index untuk menempatkan efek di belakang konten navbar */
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 9px 20px; /* Mengurangi padding agar sesuai dengan lebar layar yang lebih kecil */
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+    }
+}
+
+
+.nav-links li:nth-child(7) a {
+    color: red;
+}
+
+.logo {
+    margin-right: auto;
+    /* margin: 10%; */
+    width: 600px;
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    margin: 10%;
+    padding: 0;
+    width: 900px;
+    list-style-type: none;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #ccc;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px; /* Adjust according to navbar height */
+    background-color: #58a49c; /* Warna latar belakang */
+    position: relative; /* Mengatur posisi relative untuk konten gelombang */
+    padding-top: 50px; /* Jarak dari atas ke konten di dalam footer */
+}
+.content::before{
+    content: '';
+    position: absolute;
+    top: -50px; /* Menentukan posisi relatif terhadap footer */
+    left: 0;
+    width: 100%;
+    height: 50px; /* Tinggi gelombang */
+    background: #58a49c; /* Warna gelombang sama dengan latar belakang footer */
+    border-radius: 50% 50% 0 0; /* Membentuk gelombang */
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar .logo {
+    margin-left: 20px;
+}
+
+.navbar .nav-links {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.navbar .nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.navbar .nav-links li:first-child {
+    margin-left: 0;
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links li a:hover {
+    color: #007bff;
+}
+
+/* Main Content */
+.main-content {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.blog-post {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.blog-post .post-image {
+    width: 100%;
+    border-radius: 10px;
+}
+.blog-post .post-image-recent {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.blog-post .post-details {
+    margin-top: 10px;
+}
+
+.blog-post .post-details span {
+    margin-right: 10px;
+    color: #666;
+}
+
+.blog-post .post-details span.post-category {
+    color: #007bff;
+}
+
+.blog-post .post-title {
+    color: #333;
+    margin-top: 10px;
+}
+
+.blog-post .post-description {
+    color: #666;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.category-list,
+.recent-post-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.category-list li,
+.recent-post-list li {
+    margin-bottom: 10px;
+}
+
+.category-list li a,
+.recent-post-list li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.category-list li a:hover,
+.recent-post-list li a:hover {
+    color: #007bff;
+}
+/* Styling input type text */
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 200px; /*  lebar input */
+    transition: border-color 0.3s ease;
+}
+
+/* Hover effect */
+input[type="text"]:hover {
+    border-color: #007bff; /* Ubah warna border saat dihover */
+}
+
+/* Focus effect */
+input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff; /* Ubah warna border saat input fokus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Tambahkan shadow saat input fokus */
+}
+.btn-search {
+    height: 40px; 
+    width: 40px; 
+    background-color: red; 
+    box-shadow: none; 
+    border: none; 
+    border-radius: 5px;
+}
+hr.dotted {
+    border: none; /* Hilangkan border bawaan */
+    height: 1px; /* Atur tinggi garis */
+    background: transparent; /* Atur latar belakang jadi transparan */
+    border-top: 4px dotted #ccc; /* Tambahkan border di atas dengan efek titik-titik */
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #58a49c; /* Warna latar belakang */
+    position: relative; /* Mengatur posisi relative untuk konten gelombang */
+    padding-top: 50px; /* Jarak dari atas ke konten di dalam footer */
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: -50px; /* Menentukan posisi relatif terhadap footer */
+    left: 0;
+    width: 100%;
+    height: 50px; /* Tinggi gelombang */
+    background: #58a49c; /* Warna gelombang sama dengan latar belakang footer */
+    border-radius: 50% 50% 0 0; /* Membentuk gelombang */
+}
