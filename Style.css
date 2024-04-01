@@ -756,4 +756,77 @@ footer {
   text-align: center; /* Menyusun teks menjadi rata tengah */
 }
 
+@media screen and (max-width: 1024px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px; /* Mengurangi jarak antara elemen */
+    max-width: 100%; /* Mengatur lebar maksimum menjadi 100% */
+  }
+
+  .navbar {
+    height: 70px; /* Mengurangi tinggi navbar */
+  }
+
+  .navbar-logo {
+    margin: 40px; /* Mengurangi margin */
+  }
+
+  .navbar-submenu {
+    width: 100%; /* Mengatur lebar submenu menjadi 100% */
+    justify-content: center; /* Menengahkan submenu */
+    gap: 30px; /* Mengurangi jarak antara submenu */
+  }
+
+  .navbar-submenu a {
+    font-size: 16px; /* Mengurangi ukuran font pada submenu */
+  }
+
+  /* Update gaya untuk elemen hero */
+  .hero {
+    width: 100%;
+    align-items: center;
+    column-gap: 20px; /* Mengurangi jarak antara elemen di dalam hero */
+  }
+
+  .texthead {
+    width: 100%;
+    padding: 20px; /* Mengurangi padding */
+    gap: 10px; /* Mengurangi jarak antara elemen */
+  }
+
+  .texthero {
+    width: 100%;
+    font-size: 40px; /* Mengurangi ukuran font */
+    line-height: 50px; /* Mengurangi jarak antara baris */
+    text-align: center; /* Menengahkan teks */
+  }
+
+  .paragraf {
+    width: 100%;
+    font-size: 14px; /* Mengurangi ukuran font */
+    line-height: 18px; /* Mengurangi jarak antara baris */
+  }
+
+  /* Update gaya untuk elemen footer */
+  .footer {
+    height: auto; /* Atur ketinggian footer menjadi otomatis */
+    padding: 20px; /* Mengurangi padding */
+  }
+
+  .footer-logo img {
+    max-width: 80px; /* Mengurangi ukuran logo */
+    max-height: 80px; /* Mengurangi ukuran logo */
+  }
+
+  .social-icons i {
+    padding-top: 5px; /* Mengurangi padding atas ikon sosial */
+    padding-bottom: 20px; /* Mengurangi padding bawah ikon sosial */
+  }
+
+  .footer .copyright {
+    margin-top: 30px; /* Mengurangi margin atas */
+  }
+}
 
