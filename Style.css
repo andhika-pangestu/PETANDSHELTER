@@ -11,7 +11,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 100px;
-    max-width: 1440px;
+    width: 100%;
 }
 
 h5 {
@@ -95,7 +95,7 @@ p {
 
 .hero {
   display: flex;
-  width: 1420px;
+  width: 100%;
   align-items: center;
   align-content: space-between;
   column-gap: 143px;
@@ -219,12 +219,11 @@ line-height: 160%; /* 32px */
   width: 380px;
 height: 615px;
 flex-shrink: 0;
+position: absolute;
   background: url(public/images/doghero.png);
-  position: absolute;
-  top: 120px;
-  left: 749px;
+  top: 150px;
+  right: 20%
 }
-
 .cathero {
   width: 323px;
   height: 517px;;
@@ -232,7 +231,7 @@ flex-shrink: 0;
   background: url(public/images/cathero.png);
   position: absolute;
   top: 213px;
-  left:1047px
+  right: 5%
 }
 .pop-up {
   transition: transform 0.3s ease;
@@ -426,7 +425,7 @@ background:url(public/images/toy.png) ;
 }
 .rescue {
 display: flex;
-width: 1440px;
+width: 100%;
 height: 560px;
 justify-content: center;
 align-items: center;
@@ -464,7 +463,7 @@ flex-shrink: 0;
   background: url(public/images/food-1.png);
   position: absolute;
   top: 1301px;
-  left:1190px;
+  left:80%;
 }
 
 #accent{
@@ -497,7 +496,7 @@ max-width: 1284px;
 display: flex;
 align-items: flex-start;
 gap: 25px;
-max-width: 1440;
+max-width: 100%;
 }
 
 .card2 {
@@ -693,28 +692,18 @@ gap: 1px;
   width: 408px;
 }
 
-.catmini {
-  width: 287px;
-  height: 289px;
-
-flex-shrink: 0;
-background: url(public/images/cat-101.png);
-position: absolute;
-top: 436px;
-left: 1082px;
-
-
-}
 
 .dogmini  {
   width: 375px;
-height: 425px;
-flex-shrink: 0;
-background: url(public/images/dog-91.png);
-position: absolute;
-top: 100px;
-left: 900px;
+  height: 425px;
+  flex-shrink: 0;
+  background: url(public/images/dog-91.png);
+  position: absolute;
+  top: 40%; /* Atur posisi top relatif terhadap tinggi viewport */
+  left: 80%; /* Atur posisi left relatif terhadap lebar viewport */
+  transform: translate(-50%, -50%); /* Untuk mengatur posisi elemen ke tengah */
 }
+
 
 footer {
   position: relative;
@@ -759,6 +748,7 @@ footer {
 @media screen and (max-width: 1024px) {
   body {
     display: flex;
+    flex-direction: column;
     flex-direction: column;
     align-items: center;
     gap: 50px; /* Mengurangi jarak antara elemen */
@@ -819,7 +809,16 @@ footer {
     max-width: 80px; /* Mengurangi ukuran logo */
     max-height: 80px; /* Mengurangi ukuran logo */
   }
-
+  .food {
+    width: 210px;
+    height: 439px;
+    flex-shrink: 0;
+    background: url(public/images/food-1.png);
+    position: absolute;
+    top: 50%; /* Menempatkan elemen di tengah vertikal */
+    right: 5%; /* Mengatur posisi dari sisi halaman */
+    transform: translateY(-50%); /* Menyesuaikan posisi elemen ke tengah vertikal */
+}
   .social-icons i {
     padding-top: 5px; /* Mengurangi padding atas ikon sosial */
     padding-bottom: 20px; /* Mengurangi padding bawah ikon sosial */
