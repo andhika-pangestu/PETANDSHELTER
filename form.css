@@ -1,3 +1,297 @@
+@font-face {
+    font-family: 'Helvetica';
+    src: url('font/Helvetica.ttf') format('truetype');
+  }  
+body {
+      margin: 0;
+      padding: 0;
+  }
+.navbar {
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    padding: 9px 85px 9px 66px;
+    align-items: center;
+    gap: 380px;
+    flex-shrink: 0;
+    position: fixed;
+    z-index: 1000;
+    width: 93%;
+    font-family: "Helvetica";
+    backdrop-filter: blur(4px); /* Efek blur untuk membuat efek glass */
+    transition: background-color 0.3s ease; /* Transisi warna latar belakang */
+    }
+    
+.navbar.scrolled {
+      background-color: rgba(255, 255, 255, 0.8);/* Warna latar belakang solid saat di-scroll */
+    }
+    
+.navbar-logo {
+    width: 100px;
+    height: auto;
+  }
+.navbar-submenu {
+    display: flex;
+    align-items: center;
+    gap: 61px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 160%; /* 32px */
+  }
+.navbar-submenu a {
+    color: #000;
+    text-decoration: none;
+    transition: font-size 0.3s ease;
+  }
+.navbar-submenu a:nth-child(7) {
+    color: #F06765;
+  }
+  
+.navbar-submenu a:hover {
+    border-bottom: 2px solid black;
+    font-size: 21px;
+  }
+
+  .judul {
+    color: black;
+    padding-top: 175px;
+    text-align: center;
+    margin: auto;
+    float: left;
+}
+
+.judul h2 {
+    font-family: "Helvetica Rounded";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 65px;
+    text-transform: uppercase;
+}
+.card h4{
+    color: #000;
+    font-family: "Helvetica Rounded";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 18px;
+}
+
+.card {
+    width: 1300px;
+    height: auto;
+    background-color: #f0f0f0; /* Warna latar belakang card */
+    margin-top: 1400px; /* Posisi card di tengah secara horizontal dan memberikan jarak 20px dari atas */
+    padding: 40px; /* Memberikan ruang dalam card */
+    background: rgba(224, 224, 224, 0.10);
+    box-shadow: -1px 5px 7px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    border: 1px #E0E0E0 solid;
+    position: absolute;
+    top: 50%; /* Atur posisi card ke tengah vertikal */
+    left: 50%; /* Atur posisi card ke tengah horizontal */
+    transform: translate(-50%, -50%); /* Geser card ke tengah */
+}
+
+.card img {
+    width: 470px;
+    height: 392px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    object-fit: cover;
+  }
+  
+  .garis {
+    border-bottom: 2px solid #9AD2D1;
+  }
+  
+  table {
+    width: 750px;
+    border-collapse: collapse;
+    margin-top: 80px;
+    float: right;
+    margin-right: 30px;
+    font-family: "Helvetica";
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+
+  .form {
+    width: 100%;
+    height: auto;
+    font-family: "Helvetica";
+    border-radius: 8px;
+    margin: 0 auto; /* Updated */
+    float: left; /* Updated */
+    padding: 0px 30px;
+    max-width: calc(100vw - 40px);
+    position: relative;
+}
+.form h5{
+    font-family: Helvetica;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20.1px; /* 143.571% */
+}
+.form p{
+    text-align: justify;
+}
+.left,
+.right{
+    width: 45%; /* Updated */
+    float: left; /* Updated */
+    margin: 0 5px;
+}
+input,
+.dropdown{
+    width: calc(100% - 20px); /* Updated */
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    background: #F8FAFC;
+    transition: all 0.5s ease;
+    font-family: "Helvetica";
+    margin-bottom: 20px;
+}
+/* Style untuk container radio button */
+.radio {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Style untuk input radio */
+  .radio input[type="radio"] {
+    margin-top: 25px;
+    margin-right: 190px; /* Jarak antara radio button dengan label */
+
+  }
+input:focus {
+    border-bottom: 1px solid #9AD2D1;
+}
+
+p:before {
+    content: attr(type);
+    display: inline-block; /* Updated */
+    margin-right: 10px; /* Updated */
+    font-size: 14px;
+}
+.required {
+    color: #ED0131;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+#signature-pad {
+    width: 50%;
+    height: 200px;
+}
+#signature-pad canvas {
+    border: 2px solid #9AD2D1;
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    padding: 8px 12px;
+    margin: 15px 0 0;
+    border: 2px solid #9AD2D1;
+    border-radius: 30px;
+    background: none;
+    color: #50505a;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: "Helvetica";
+}
+
+button:hover {
+    background: #9AD2D1;
+    color: #fff;
+}
+.btn-container {
+    text-align: right;
+    margin: auto 120px;
+}
+
+.btn-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Helvetica";
+    transition: background-color 0.7s ease;
+}
+
+.btn-container button:hover {
+    background-color: #0056b3;
+}
+
+
+footer {
+    position: absolute;
+    top: 3400px; /* Atur posisi card ke tengah vertikal */
+    left: 0; /* Atur posisi card ke tengah horizontal */
+    bottom: 0;
+    width: 100%;
+    background-position: center;
+    text-align: center;
+    background-color: #fff;
+    z-index: -1; /* Footer di layer belakang */
+    height: 350px;
+}
+
+
+  .footer-logo {
+    display: inline-block; /* Mengatur logo agar dapat diatur ukuran lebarnya */
+    margin: 0 auto; /* Mengatur logo berada di tengah */
+  }
+  
+  .footer-logo img {
+    padding-top: 100px;
+    max-width: 100px; /* Mengatur lebar maksimum logo */
+    max-height: 100px; /* Mengatur tinggi maksimum logo */
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-icons a {
+    color: black; /* mengatur warna ikon menjadi putih */
+  }
+  
+  .social-icons i {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    margin: 0 10px; /* Jarak antara ikon sosial */
+  }
+  
+  .footer .copyright {
+    margin-top: 90px;
+    font-size: 14px;
+    color: #888;
+    text-align: center; /* Menyusun teks menjadi rata tengah */
+  }
 h3 {
     color: #000;
 
@@ -8,5 +302,3 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 }
-
- 
