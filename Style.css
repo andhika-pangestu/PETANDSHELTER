@@ -45,7 +45,7 @@ p {
   background: var(--light, #FFF);
   z-index: 9999;
 }
-
+/**/
 .navbar-logo {
   margin: 90PX;
   width: 61px;
