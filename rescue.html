@@ -9,18 +9,19 @@
     </head>
     <body>
           <!-- Navbar -->
-        <nav class="navbar">
+          <nav class="navbar">
             <a href="index.html"><img src="img/icon-black.png" alt="Logo" class="navbar-logo"></a>
             <div class="navbar-submenu">
-                <a href="#">Donasi</a>
-                <a href="#">Tentang</a>
+                <a href="donasi.html">Donasi</a>
+                <a href="aboutus.html">Tentang</a>
                 <a href="adopsi.html" target="_blank" >Adopsi</a>
                 <a href="kalender.html" target="_blank">Acara</a>
                 <a href="shelter.html">Shelter</a>
-                <a href="#">Tips</a>
+                <a href="tips.html">Tips</a>
                 <a href="rescue.html">Rescue</a>
             </div>
         </nav>
+
 
             <!-- hero section -->
         <div class="hero-section">
@@ -134,6 +135,16 @@
                 </form>
             </div>
 
+            <script>
+                window.addEventListener('scroll', function() {
+                const navbar = document.querySelector('.navbar');
+                if (window.scrollY > 0) {
+                navbar.classList.add('scrolled');
+                } else {
+                navbar.classList.remove('scrolled');
+                }
+              });
+            </script>
     </body>
     <!--Footer-->
 <footer>

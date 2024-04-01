@@ -18,7 +18,7 @@ body{
     overflow: hidden;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; 
     padding: 10px 20px;
     padding: 9px 85px 9px 66px;
     align-items: center;
@@ -139,7 +139,7 @@ body{
     flex-wrap: wrap;
     margin: 40px 0px 0px 0px;
     background-color: #56A69D;
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
     padding-top: 5rem;
 }
 
