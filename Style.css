@@ -7,7 +7,6 @@ body {
     font-family: Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    height: 2000;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
@@ -270,6 +269,7 @@ font-size: 32px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
+margin: 5px;
 }
 
 
@@ -616,6 +616,143 @@ height: 269px;
 flex-shrink: 0;
 fill: var(--accents, #F06765);
 align-self: stretch;
+}
+
+.donate{
+  display: inline-flex;
+height: 2040px;
+padding: 200px 110px 1279px 170px;
+flex-direction: column;
+align-items: center;
+text-align: justify;
+gap: 10;
+}
+
+.contentdonate {
+  display: inline-flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 98px;
+}
+.rekening {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
+}
+
+.donasibox {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
+}
+
+.headdonasi {
+  color: var(--primary, #9AD2D1);
+  font-family: "Helvetica Rounded";
+  font-size: 59px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 76px; /* 128.814% */
+  width: 552px;
+}
+
+#donatepargraf {
+  width: 532px;
+}
+
+.donatecontent {
+  display: flex;
+align-items: flex-start;
+gap: 114px;
+max-width: 868px;
+}
+.rek h3 {
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 15px;
+  background: var(--primary, #9AD2D1);
+  color: var(--light, #FFF);
+ }
+  
+
+
+.alamat-pengiriman {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 1px;
+}
+
+#alamat {
+  width: 408px;
+}
+
+.catmini {
+  width: 287px;
+height: 289px;
+flex-shrink: 0;
+background: url(public/images/cat-101.png);
+position: absolute;
+top: 200px;
+left: 1238px;
+
+}
+
+.dogmini  {
+width: 375px;
+height: 425px;
+flex-shrink: 0;
+background: url(public/images/dog-91.png);
+position: absolute;
+top: 336px;
+left: 1382px;
+}
+
+footer {
+  position: relative;
+  background-image: url('img/wave\ \(1\).svg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px 0 50px;
+  background-color: #fff;
+}
+
+.footer-logo {
+  display: inline-block; /* Mengatur logo agar dapat diatur ukuran lebarnya */
+  margin: 0 auto; /* Mengatur logo berada di tengah */
+}
+
+.footer-logo img {
+  padding-top: 100px;
+  max-width: 100px; /* Mengatur lebar maksimum logo */
+  max-height: 100px; /* Mengatur tinggi maksimum logo */
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons a {
+  color: black; /* mengatur warna ikon menjadi putih */
+}
+
+.social-icons i {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  margin: 0 10px; /* Jarak antara ikon sosial */
+}
+
+.footer .copyright {
+  margin-top: 90px;
+  font-size: 14px;
+  color: #888;
+  text-align: center; /* Menyusun teks menjadi rata tengah */
 }
 
 

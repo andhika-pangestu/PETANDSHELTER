@@ -263,7 +263,7 @@ header {
 }
 
 .section3  h4 {
-=
+
   font-family: Helvetica;
   font-size: 20px;
   font-style: normal;
@@ -382,7 +382,6 @@ footer {
   color: #888;
   text-align: center; /* Menyusun teks menjadi rata tengah */
 }
-
 
 @media (max-width: 768px) {
   .navbar {

@@ -21,7 +21,7 @@ body {
   position: fixed;
   z-index: 1000;
   width: 93%;
-  backdrop-filter: blur(4px); /* Efek blur untuk membuat efek glass */
+/* Efek blur untuk membuat efek glass */
   transition: background-color 0.3s ease; /* Transisi warna latar belakang */
   }
   
