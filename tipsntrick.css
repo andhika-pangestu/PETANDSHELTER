@@ -15,8 +15,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-  
+    padding: 0px;
+    
+
     padding: 9px 85px 9px 66px;
     align-items: center;
     gap: 380px;
@@ -68,7 +69,7 @@ body {
 .content {
     display: flex;
     justify-content: center;
-    margin-top: 70px; /* Adjust according to navbar height */
+    margin-top: 0px; /* Adjust according to navbar height */
     background-color: #58a49c; /* Warna latar belakang */
     padding-top: 100px; 
 }
