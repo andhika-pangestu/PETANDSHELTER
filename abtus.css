@@ -1,129 +1,64 @@
 @font-face {
     font-family: 'Helvetica';
     src: url('font/Helvetica.ttf') format('truetype');
-}  
-
-body {
-    font-family: Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    height: 2000;
-}
-
-h5 {
-    font-size: 20px;
-    font-family: "Helvetica Rounded";
-}
-
-p {
-    color: #000;
-    text-align: justify;
-    font-family: Helvetica, sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20.1px; /* 143.571% */
-}
-
-.navbar {
-    position: fixed;
+  }  
+  body {
+      font-family: Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #fff;
+    overflow: hidden;
     display: flex;
-    width: 100%;
-    height: 56px;
-    padding: 9px 10px 9px 50px;
+    justify-content: space-between;
     align-items: center;
-    background-color: white;
-    color: black;
+    padding: 10px 20px;
+  
+    padding: 9px 85px 9px 66px;
+    align-items: center;
+    gap: 380px;
+    flex-shrink: 0;
+  
+    position: fixed;
     z-index: 1000;
-}
-
-.navbar::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(10px); /* Efek blur pada latar belakang */
-    -webkit-backdrop-filter: blur(10px); /* Untuk mendukung Safari */
-    z-index: -1; /* Mengatur kedalaman z-index untuk menempatkan efek di belakang konten navbar */
-}
-
-/* Atur ukuran dan properti lain sesuai kebutuhan */
-
-
-
-.nav-links li:nth-child(7) a {
-    color: red;
-}
-
-.logo {
-    margin-right: auto;
-    /* margin: 10%; */
-    width: 600px;
-}
-
-.logo img {
-    width: 70px;
+    width: 93%;
+    backdrop-filter: blur(4px); /* Efek blur untuk membuat efek glass */
+    transition: background-color 0.3s ease; /* Transisi warna latar belakang */
+    }
+    
+  .navbar.scrolled {
+      background-color: rgba(255, 255, 255, 0.8);/* Warna latar belakang solid saat di-scroll */
+    }
+    
+  .navbar-logo {
+    width: 100px;
     height: auto;
-}
-
-.nav-links {
+  }
+  .navbar-submenu {
     display: flex;
-    margin: 10%;
-    padding: 0;
-    list-style-type: none;
-}
-
-.nav-links li {
-    margin: 0 10px;
-}
-
-.nav-links li a {
+    align-items: center;
+    gap: 61px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 160%; /* 32px */
+  }
+  .navbar-submenu a {
+    color: #000;
     text-decoration: none;
-    color: inherit;
-    font-size: 16px;
-    padding: 5px 10px;
-    transition: 0.3s;
-}
+    transition: font-size 0.3s ease;
+  }
+  .navbar-submenu a:nth-child(7) {
+    color: #F06765;
+  }
+  
+  .navbar-submenu a:hover {
+    border-bottom: 2px solid black;
+    font-size: 21px;
+  }
 
-.nav-links li a:hover {
-    color: #ccc;
-}
-
-/* Responsive adjustments */
-
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 9px 20px; /* Mengurangi padding agar sesuai dengan lebar layar yang lebih kecil */
-    }
-
-    .logo {
-        margin-bottom: 10px;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 10px;
-    }
-
-    .nav-links li {
-        margin: 5px 0;
-    }
-}
-
-
-
-
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
 /* About us section styles */
 #about-us {
     padding: 50px 0;
@@ -131,7 +66,7 @@ body {
     justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
-    background-image: url('Pet Store Banner  (1).png');
+    background-image: url('/img/Pet Store Banner  (1).png');
     background-size: cover;
     background-position: center;
 }
@@ -329,19 +264,45 @@ body {
     padding: 50px 0;
     text-align: center;
 }
-footer {
-    background-color: #58a49c; /* Warna latar belakang */
-    position: relative; /* Mengatur posisi relative untuk konten gelombang */
-    padding-top: 50px; /* Jarak dari atas ke konten di dalam footer */
-}
 
-footer::before {
-    content: '';
-    position: absolute;
-    top: -50px; /* Menentukan posisi relatif terhadap footer */
-    left: 0;
-    width: 100%;
-    height: 50px; /* Tinggi gelombang */
-    background: #58a49c; /* Warna gelombang sama dengan latar belakang footer */
-    border-radius: 50% 50% 0 0; /* Membentuk gelombang */
-}
+footer {
+    position: relative;
+    background-image: url('img/wave\ \(1\).svg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0 50px;
+    background-color: #fff;
+  }
+  
+  .footer-logo {
+    display: inline-block; /* Mengatur logo agar dapat diatur ukuran lebarnya */
+    margin: 0 auto; /* Mengatur logo berada di tengah */
+  }
+  
+  .footer-logo img {
+    padding-top: 100px;
+    max-width: 100px; /* Mengatur lebar maksimum logo */
+    max-height: 100px; /* Mengatur tinggi maksimum logo */
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-icons a {
+    color: black; /* mengatur warna ikon menjadi putih */
+  }
+  
+  .social-icons i {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    margin: 0 10px; /* Jarak antara ikon sosial */
+  }
+  
+  .footer .copyright {
+    margin-top: 90px;
+    font-size: 14px;
+    color: #888;
+    text-align: center; /* Menyusun teks menjadi rata tengah */
+  }
