@@ -7,7 +7,6 @@ body {
     font-family: Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    height: 2000;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
@@ -46,7 +45,7 @@ p {
   background: var(--light, #FFF);
   z-index: 9999;
 }
-
+/**/
 .navbar-logo {
   margin: 90PX;
   width: 61px;
@@ -270,6 +269,7 @@ font-size: 32px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
+margin: 5px;
 }
 
 
@@ -611,11 +611,149 @@ gap: 80px;
 }
 
 .footer {
-width: 1440px;
-height: 269px;
+  width: 100%; /* Atur lebar elemen footer */
+  height: 269px; /* Atur tinggi elemen footer */
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDQwIiBoZWlnaHQ9IjI2OSIgdmVyc2lvbj0iMS4wIiBmaWxsPSJub25lIj48cGF0aCBkPSJNMCAwTDE0Mi4zNTIgMjcuMjg0MUMxNjcuMjI0IDMyLjA1MTMgMTkyLjc3NiAzMi4wNTEzIDIxNy42NDggMjE3LjY0OEwzMjIuMzUyIDcuMjE1ODhDMzQ3LjIyNCAyLjQ0ODY4IDM3Mi43NzYgMi40NDg2OCAzOTcuNjQ4IDcuMjE1ODhMMzUwMi4zNTIgMjcuMjg0MUwxMDQyLjM1IDI3LjIxNThDMTA2Ny4yMiAyLjQ0ODY4IDkxMi43OCAyLjQ0ODY4IDExNy42NDggMjcuMjg0MUwxMjIyLjM1IDI3LjI4NDFDMTI0Ny4yMiAzMi4wNTEzIDEyNzIuNzggMzIuMDUxMyAxMjk3LjY1IDEyNy42NDFMMTQ0MCAwVjM0NkgxMjYwSDEwODBIMTA4MEgxMjVIMFYwWkoiLz48L3N2Zz4='); /* Ganti dengan kode SVG Base64 Anda */
+  background-repeat: no-repeat; /* Hindari pengulangan latar belakang */
+  background-size: cover; /* Atur ukuran latar belakang agar menutupi elemen */
+  background-position: center; /* Posisikan latar belakang di tengah elemen */
+  fill: #F06765; /* Atur warna isi SVG */
+}
+
+.donate{
+  display: inline-flex;
+padding: 200px 110px 0px 170px;
+flex-direction: column;
+align-items: center;
+text-align: justify;
+gap: 10;
+}
+
+.contentdonate {
+  display: inline-flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 98px;
+}
+.rekening {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
+}
+
+.donasibox {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
+}
+
+.headdonasi {
+  color: var(--primary, #9AD2D1);
+  font-family: "Helvetica Rounded";
+  font-size: 59px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 76px; /* 128.814% */
+  width: 552px;
+}
+
+#donatepargraf {
+  width: 532px;
+}
+
+.donatecontent {
+  display: flex;
+align-items: flex-start;
+gap: 114px;
+max-width: 868px;
+}
+.rek h3 {
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 15px;
+  background: var(--primary, #9AD2D1);
+  color: var(--light, #FFF);
+ }
+  
+
+
+.alamat-pengiriman {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 1px;
+}
+
+#alamat {
+  width: 408px;
+}
+
+.catmini {
+  width: 287px;
+  height: 289px;
+
 flex-shrink: 0;
-fill: var(--accents, #F06765);
-align-self: stretch;
+background: url(public/images/cat-101.png);
+position: absolute;
+top: 436px;
+left: 1082px;
+
+
+}
+
+.dogmini  {
+  width: 375px;
+height: 425px;
+flex-shrink: 0;
+background: url(public/images/dog-91.png);
+position: absolute;
+top: 100px;
+left: 900px;
+}
+
+footer {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  background-color: #fff;
+}
+
+.footer-logo {
+  display: inline-block; /* Mengatur logo agar dapat diatur ukuran lebarnya */
+  margin: 0 auto; /* Mengatur logo berada di tengah */
+}
+
+.footer-logo img {
+  padding-top: 100px;
+  max-width: 100px; /* Mengatur lebar maksimum logo */
+  max-height: 100px; /* Mengatur tinggi maksimum logo */
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons a {
+  color: black; /* mengatur warna ikon menjadi putih */
+}
+
+.social-icons i {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  margin: 0 10px; /* Jarak antara ikon sosial */
+}
+
+.footer .copyright {
+  margin-top: 90px;
+  font-size: 14px;
+  color: #888;
+  text-align: center; /* Menyusun teks menjadi rata tengah */
 }
 
 
