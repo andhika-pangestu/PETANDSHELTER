@@ -1,0 +1,249 @@
+@font-face {
+    font-family: 'Helvetica';
+    src: url('font/Helvetica.ttf') format('truetype');
+  }  
+  body {
+      font-family: Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  
+    padding: 9px 85px 9px 66px;
+    align-items: center;
+    gap: 380px;
+    flex-shrink: 0;
+  
+    position: fixed;
+    z-index: 1000;
+    width: 93%;
+    backdrop-filter: blur(4px); /* Efek blur untuk membuat efek glass */
+    transition: background-color 0.3s ease; /* Transisi warna latar belakang */
+    }
+    
+  .navbar.scrolled {
+      background-color: rgba(255, 255, 255, 0.8);/* Warna latar belakang solid saat di-scroll */
+    }
+    
+  .navbar-logo {
+    width: 100px;
+    height: auto;
+  }
+  .navbar-submenu {
+    display: flex;
+    align-items: center;
+    gap: 61px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 160%; /* 32px */
+  }
+  .navbar-submenu a {
+    color: #000;
+    text-decoration: none;
+    transition: font-size 0.3s ease;
+  }
+  .navbar-submenu a:nth-child(7) {
+    color: #F06765;
+  }
+  
+  .navbar-submenu a:hover {
+    border-bottom: 2px solid black;
+    font-size: 21px;
+  }
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px; /* Adjust according to navbar height */
+    background-color: #58a49c; /* Warna latar belakang */
+    padding-top: 100px; 
+}
+
+.content::before{
+    content: '';
+    position: absolute;
+    top: -50px; /* Menentukan posisi relatif terhadap footer */
+    left: 0;
+    width: 100%;
+}
+/* Main Content */
+.main-content {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.blog-post {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.blog-post .post-image {
+    width: 100%;
+    border-radius: 10px;
+}
+.blog-post .post-image-recent {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.blog-post .post-details {
+    margin-top: 10px;
+}
+
+.blog-post .post-details span {
+    margin-right: 10px;
+    color: #666;
+}
+
+.blog-post .post-details span.post-category {
+    color: #007bff;
+}
+
+.blog-post .post-title {
+    color: #333;
+    margin-top: 10px;
+}
+
+.blog-post .post-description {
+    color: #666;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.category-list,
+.recent-post-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.category-list li,
+.recent-post-list li {
+    margin-bottom: 10px;
+}
+
+.category-list li a,
+.recent-post-list li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.category-list li a:hover,
+.recent-post-list li a:hover {
+    color: #007bff;
+}
+/* Styling input type text */
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 200px; /*  lebar input */
+    transition: border-color 0.3s ease;
+}
+
+/* Hover effect */
+input[type="text"]:hover {
+    border-color: #007bff; /* Ubah warna border saat dihover */
+}
+
+/* Focus effect */
+input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff; /* Ubah warna border saat input fokus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Tambahkan shadow saat input fokus */
+}
+.btn-search {
+    height: 40px; 
+    width: 40px; 
+    background-color: red; 
+    box-shadow: none; 
+    border: none; 
+    border-radius: 5px;
+}
+hr.dotted {
+    border: none; /* Hilangkan border bawaan */
+    height: 1px; /* Atur tinggi garis */
+    background: transparent; /* Atur latar belakang jadi transparan */
+    border-top: 4px dotted #ccc; /* Tambahkan border di atas dengan efek titik-titik */
+    margin-top: 10px;
+}
+
+
+footer {
+    position: relative;
+    background-image: url('img/wave\ \(1\).svg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0 50px;
+    background-color: #fff;
+  }
+  
+  .footer-logo {
+    display: inline-block; /* Mengatur logo agar dapat diatur ukuran lebarnya */
+    margin: 0 auto; /* Mengatur logo berada di tengah */
+  }
+  
+  .footer-logo img {
+    padding-top: 100px;
+    max-width: 100px; /* Mengatur lebar maksimum logo */
+    max-height: 100px; /* Mengatur tinggi maksimum logo */
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-icons a {
+    color: black; /* mengatur warna ikon menjadi putih */
+  }
+  
+  .social-icons i {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    margin: 0 10px; /* Jarak antara ikon sosial */
+  }
+  
+  .footer .copyright {
+    margin-top: 90px;
+    font-size: 14px;
+    color: #888;
+    text-align: center; /* Menyusun teks menjadi rata tengah */
+  }
