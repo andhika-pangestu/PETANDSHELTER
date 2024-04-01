@@ -123,7 +123,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center; */
-    padding-top: 5rem;;
+    padding-top: 0rem;;
     padding-bottom: 2rem; /* adjust as needed */
     font-size: 20px;
     font-family: "Helvetica Rounded";
@@ -166,11 +166,19 @@ body{
     height: 100%;
     object-fit: cover;
 }
+.card-container .card h2{
+    color: var(--Secondary, #56A69D);
+    font-family: "Helvetica Rounded";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
 
 .card-container .card:hover h2{
     color: var(--Secondary, #56A69D);
     font-family: "Helvetica Rounded";
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -378,7 +386,7 @@ transform:rotate(90deg);
 
   footer {
     z-index: 0;
-    background-image: url("img/wave-shelter\ \(2\).svg");
+    background-image: url("img/wave\ \(2\).svg");
     position: relative;
     background-size: cover;
     background-position: center;
