@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="shelter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Shelter</title>
 </head>
 <body>
+
+          <!-- Navbar -->
+          <nav class="navbar">
+            <a href="index.html"><img src="img/icon-black.png" alt="Logo" class="navbar-logo"></a>
+            <div class="navbar-submenu">
+                <a href="#">Donasi</a>
+                <a href="#">Tentang</a>
+                <a href="adopsi.html" target="_blank" >Adopsi</a>
+                <a href="kalender.html" target="_blank">Acara</a>
+                <a href="shelter.html">Shelter</a>
+                <a href="#">Tips</a>
+                <a href="rescue.html">Rescue</a>
+            </div>
+        </nav>
+
 
     <div class="hero">
         <header>
@@ -18,36 +34,129 @@
             <h1>Shelter Location</h1>
     </div>
         <div class="card-container">
-            <div class="card">
-                <div class="card1">
+            <div class="card" data-name="c-1">
                     <img src="img/cimekar-card.png" alt="Cimekar Animal Care Center">
-                    <div class="container"></div>
+
                     <h2>Cimekar Animal Care Center</h2>
-                    <p>Mon - Fri (6 am - 11 pm)<br>Sat - Sun (1 am - 11 pm)<br>Jalan Cimekar No.2 & 3 Rt 01 Rw 03</p>
+                    <p>
+                        <!-- <i class="fa-regular fa-calendar"></i> -->
+                        <span class="weekday">Mon - Fri (6 am - 11 pm)</span><br>
+                        <span class="weekend">Sat - Sun (1 am - 11 pm)</span><br>
+                       Jalan Cimekar No.2 & 3 Rt 01 Rw 03
+                    </p>
                 </div>
-                <div class="card2">
+            <div class="card" data-name="c-3">
                     <img src="img/cimekar-card.png" alt="Cimekar Animal Care Center">
-                    <div class="container"></div>
                     <h2>Cimekar Animal Care Center</h2>
-                    <p>Mon - Fri (6 am - 11 pm)<br>Sat - Sun (1 am - 11 pm)<br>Jalan Cimekar No.2 & 3 Rt 01 Rw 03</p>
-                </div>
-                <div class="card3">
+                    <p>
+                        <!-- <i class="fa-regular fa-calendar"></i> -->
+                        <span class="weekday">Mon - Fri (6 am - 11 pm)</span><br>
+                        <span class="weekend">Sat - Sun (1 am - 11 pm)</span><br>
+                       Jalan Cimekar No.2 & 3 Rt 01 Rw 03
+                    </p>
+            </div>
+            <div class="card" data-name="c-3">
                     <img src="img/cimekar-card.png" alt="Cimekar Animal Care Center">
-                    <div class="container"></div>
                     <h2>Cimekar Animal Care Center</h2>
-                    <p>Mon - Fri (6 am - 11 pm)<br>Sat - Sun (1 am - 11 pm)<br>Jalan Cimekar No.2 & 3 Rt 01 Rw 03</p>
+                    <p>
+                        <!-- <i class="fa-regular fa-calendar"></i> -->
+                        <span class="weekday">Mon - Fri (6 am - 11 pm)</span><br>
+                        <span class="weekend">Sat - Sun (1 am - 11 pm)</span><br>
+                        Jalan Cimekar No.2 & 3 Rt 01 Rw 03
+                    </p>
                 </div>
             </div>
         </div>
     
-    <div class="shelter-details">
+    <!-- <div class="shelter-details">
         <header>
             <h1>Shelter Details</h1>
         </header>
         <div class="details">
 
         </div>
+    </div> -->
+
+    <div class="location-preview">
+
+        <div class="preview" data-target="c-1">
+            <i class="fas fa-times"></i>
+            <img src="img/cimekar-card.png" alt="Cimekar Animal Care Center">
+            <h2>Cimekar Animal Care Center</h2>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span>( 500k )</span>
+            </div>
+            <p><i class="fa-regular fa-calendar"></i> Mon - Fri (6 am - 11 pm)<br><span>Sat - Sun (1 am - 11 pm)</span>
+                <br><i class="fa-solid fa-map-pin"></i> Jalan Cimekar No.2 & 3 Rt 01 Rw 03</p>
+                <h3>Description</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quasi ipsam placeat, quis consequuntur eveniet ad ab expedita.</p>
+            <div class="button-adopsi">
+                <a href="adopsi.html" class="adopsi">Adopsi List</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="c-2">
+            <i class="fas fa-times"></i>
+            <img src="img/cimekar-card.png" alt="Cimekar Animal Care Center">
+            <h2>Cimekar Animal Care Center</h2>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span>( 500k )</span>
+            </div>
+            <p><i class="fa-regular fa-calendar"></i> Mon - Fri (6 am - 11 pm)<br><span>Sat - Sun (1 am - 11 pm)</span>
+                <br><i class="fa-solid fa-map-pin"></i> Jalan Cimekar No.2 & 3 Rt 01 Rw 03</p>
+                <h3>Description</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quasi ipsam placeat, quis consequuntur eveniet ad ab expedita.</p>
+            <div class="button-adopsi">
+                <a href="adopsi.html" class="adopsi">Adopsi List</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="c-3">
+            <i class="fas fa-times"></i>
+            <img src="img/cimekar-card.png" alt="Cimekar Animal Care Center">
+            <h2>Cimekar Animal Care Center</h2>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span>( 500k )</span>
+            </div>
+            <p><i class="fa-regular fa-calendar"></i> Mon - Fri (6 am - 11 pm)<br><span>Sat - Sun (1 am - 11 pm)</span>
+                <br><i class="fa-solid fa-map-pin"></i> Jalan Cimekar No.2 & 3 Rt 01 Rw 03</p>
+                <h3>Description</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quasi ipsam placeat, quis consequuntur eveniet ad ab expedita.</p>
+            <div class="button-adopsi">
+                <a href="adopsi.html" class="adopsi">Adopsi List</a>
+            </div>
+        </div>
     </div>
-    
+    <script src="shelter.js"></script>
 </body>
+
+<footer>
+    <div class="footer-logo">
+    <img src="img/icon-black.png" alt="Logo">
+  </div>
+  <div class="social-icons">
+    <i class="fab fa-instagram-square fa-2x"></i>
+    <i class="fab fa-facebook fa-2x"></i>
+    <i class="fas fa-envelope fa-2x"></i>
+    <i class="fab fa-whatsapp-square fa-2x"></i>
+  </div>
+  <div class="copyright">
+    &copy; 2024 PetAndShelter. All Rights Reserved.
+  </div>
+</footer>
 </html>
