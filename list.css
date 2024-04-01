@@ -56,12 +56,187 @@ body {
   }
 
   .section1 {
-    text-align: center;
-    ;
-  }
-  .section1 h4 {
+    position: relative;
+    background-color: #9AD2D1;
     color: white;
+    padding-top: 175px; 
+    align-items: center;
+    text-align: center;
+    margin: auto;
   }
+
+  .section1 h4 {
+    font-family: Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    width: 490px;
+    margin-left: auto; /* Mengatur margin kiri menjadi otomatis */
+    margin-right: auto; /* Mengatur margin kanan menjadi otomatis */
+    margin-bottom: 0;
+  }
+
   .section1 h2 {
-    color: black;
+    font-family: "Helvetica Rounded";
+    font-size: 40px;
+    font-weight: 100;
+    margin-bottom: -10px; /* Mengurangi margin bottom */
+    margin-top: 10px; /* Mengurangi margin bottom */
+    line-height: 1; /* Mengatur line height menjadi 1 */
+  }
+
+  .section2 {
+    display: flex;
+    justify-content: center;
+    background-color: #9AD2D1;
+  }
+  
+  .card {
+    position: relative;
+    text-align: center;
+    margin: 50px 60px;
+  }
+  
+  .card img {
+    width: 355px;
+    height: 458px; 
+    border-radius: 30px;
+    object-fit: cover;
+    filter: brightness(80%); 
+    transition: filter 0.7s ease; /* Transisi efek blur */
+  }
+
+  .adoption-button {
+    position: absolute;
+    margin-bottom: -110px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 290px; /* Sesuaikan dengan posisi yang diinginkan */
+    padding: 10px 52px;
+    background-color: #fff; /* Warna latar belakang tombol */
+    color: black; /* Warna teks tombol */
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: none; /* Sembunyikan tombol secara default */
+    justify-content: center;
+    align-items: center;
+    font-family: "Helvetica Rounded";
+    font-family: "Helvetica Rounded";
+    font-size: 20px;
+  }
+  
+  .card:hover .adoption-button {
+    display: block; /* Tampilkan tombol saat kartu di-hover */
+    filter: none; /* Hapus blur pada tombol saat kartu di-hover */
+}
+
+/* Efek blur pada gambar saat kartu di-hover */
+.card:hover img,
+.card:hover .teks {
+    filter: blur(2px);
+}
+
+
+.adoption-button:hover {
+    background-color: #56A69D; /* Warna latar belakang saat di-hover */
+    color: #fff;
+}
+  
+
+  .section2 .teks{
+    width: 237px; 
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    margin-bottom: 20px; /* Jarak antara teks dengan bagian bawah card */
+  }
+
+  .judul {
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 160%; /* 32px */
+    text-transform: uppercase;
+  }
+  
+  .ras {
+    width: 137px;
+    left: 0px;
+    top: 45px;
+    position: absolute;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.40px;
+    word-wrap: break-word;
+  }
+  
+  .jenis {
+    width: 74px;
+    left: 158px;
+    top: 45px;
+    position: absolute;
+    text-align: right;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.40px;
+    word-wrap: break-word;
+  }
+  
+  .garis {
+    width: 232px;
+    height: 0px;
+    left: 5px;
+    top: 40px;
+    position: absolute;
+    border: 1px white solid;
+    
+  }
+
+footer {
+    position: relative;
+    background-image: url('img/wave\ \(5\).svg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0 50px;
+    background-color: #fff;
+  }
+  
+  .footer-logo {
+    display: inline-block; /* Mengatur logo agar dapat diatur ukuran lebarnya */
+    margin: 0 auto; /* Mengatur logo berada di tengah */
+  }
+  
+  .footer-logo img {
+    padding-top: 100px;
+    max-width: 100px; /* Mengatur lebar maksimum logo */
+    max-height: 100px; /* Mengatur tinggi maksimum logo */
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-icons a {
+    color: black; /* mengatur warna ikon menjadi putih */
+  }
+  
+  .social-icons i {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    margin: 0 10px; /* Jarak antara ikon sosial */
+  }
+  
+  .footer .copyright {
+    margin-top: 90px;
+    font-size: 14px;
+    color: #888;
+    text-align: center; /* Menyusun teks menjadi rata tengah */
   }

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Adopsi - Pet and Shelter</title>
+    <link rel="icon" href="img/icon-black.png" />
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="Index.html" target="_blank">
+        <img src="img/icon-black.png" alt="Logo" class="navbar-logo">
+      </a>
+    <div class="navbar-submenu">
+        <a href="#">Donasi</a>
+        <a href="#">Tentang</a>
+        <a href="adopsi.html" target="_blank" >Adopsi</a>
+        <a href="kalender.html" target="_blank">Acara</a>
+        <a href="#">Shelter</a>
+        <a href="#">Tips</a>
+        <a href="#">Rescue</a>
+    </div>
+  </nav>
+  <!--Judul-->
+<div class="judul">
+    <h2>Cimekar Animal Care Center</h2>
+</div>
+  <!--Info-->
+  <div class="card">
+    <h4>American-Ringtail</h4>
+    <div class="garis"></div>
+    <p>
+        Cemong adalah kucing American Ringtail yang memiliki ciri khas 
+        ekor melingkar atau berbentuk cincin. Bulunya lembut dan tebal 
+        dengan warna dominan abu-abu, dilengkapi dengan mata yang besar 
+        dan ekspresif. American Ringtail dikenal sebagai kucing yang cerdas, 
+        ramah, dan suka bermain. Cemong adalah kucing yang menyenangkan untuk
+         dipelihara dan akan menjadi teman setia dalam keluarga.
+    </p>
+    <img src="img/pet (1).webp" alt="American Ringtail">
+    <table>
+        <tr>
+          <th>Nama Kucing</th>
+          <td>Cemong</td>
+        </tr>
+        <tr>
+          <th>Jenis Kelamin</th>
+          <td>Betina</td>
+        </tr>
+        <tr>
+          <th>Warna</th>
+          <td>Putih-Abu Dominan</td>
+        </tr>
+        <tr>
+          <th>Umur</th>
+          <td>5 Tahun</td>
+        </tr>
+        <tr>
+          <th>Vaksin</th>
+          <td>Belum Vaksin</td>
+        </tr>
+        <tr>
+          <th>Kesehatan</th>
+          <td>Sehat</td>
+        </tr>
+        <tr>
+          <th>Lokasi</th>
+          <td>Perumahan Megarahayu D3 No.18, Bandung</td>
+        </tr>
+      </table>
+<!--Informasi-->
+<form class="form">
+    <h4>Informasi Kontak Anda</h4>
+    <div class="left">
+        <label for="nama_lengkap">Nama Lengkap <span class="required">*</span></label>
+        <input id="nama_lengkap" placeholder="Yanti Syarifah" required></input>
+        <label for="alamat_lengkap">Alamat Lengkap  <span class="required">*</span></label>
+        <input id="alamat_lengkap" placeholder="Alamat Jalan, Kab/Kota, Provinsi, Kode Pos" required></input>
+    </div>
+    <div class="right">
+        <label for="email">Email  <span class="required">*</span></label>
+        <input id="email" placeholder="yantisyarifah@gmail.com" required></input>
+        <label for="nomor_whatsapp">Nomor WhatsApp  <span class="required">*</span></label>
+        <input id="nomor_whatsapp" placeholder="08xxxxxxxxxx" required></input>
+    </div>
+</form>
+
+    <!--New Family-->
+    <form class="form">
+        <h4>Tentang Keluarga Baru Hewan</h4>
+        <h5>
+            Harap beritahu kami sedikit tentang 
+            dimana hewan ini akan tinggal (Kami tahu keadaan berubah)
+        </h5>
+        <div class="left">
+            <label for="setuju">Apakah ini hewan pertama anda? <span class="required">*</span></label><br>
+        <div class="radio">
+            <label for="setuju">Ya</label>
+            <input type="radio" id="setuju" name="hewan-pertama" value="ya" required>
+            <label for="tidak_setuju">Tidak</label>
+            <input type="radio" id="tidak_setuju" name="hewan-pertama" value="tidak" required>
+        </div>
+
+        <label for="setuju">Apakah anda memiliki hewan peliharaan lainnya di rumah? <span class="required">*</span></label><br>
+        <div class="radio">
+            <label for="setuju">Ya</label>
+            <input type="radio" id="setuju" name="hewan-lain" value="ya" required>
+            <label for="tidak_setuju">Tidak</label>
+            <input type="radio" id="tidak_setuju" name="hewan-lain" value="tidak" required>
+        </div>
+
+        <label for="setuju">Apakah anda telah memiliki dokter hewan?  <span class="required">*</span></label><br>
+        <div class="radio">
+            <label for="setuju">Ya</label>
+            <input type="radio" id="setuju" name="dokter" value="ya" required>
+            <label for="tidak_setuju">Tidak</label>
+            <input type="radio" id="tidak_setuju" name="dokter" value="tidak" required>
+        </div>
+
+        <label for="orang-rumah">Berapa banyak orang dewasa di rumah anda?  <span class="required">*</span></label>
+        <select class="dropdown" name="orang-rumah" required>
+            <option value="" disabled selected>Silahkan Pilih</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3 atau lebih</option>
+        </select>
+
+        <label for="alergi">Adakah orang di rumah yang memiliki alergi pada bulu hewan?  <span class="required">*</span></label>
+        <select class="dropdown" name="alergi" required>
+            <option value="" disabled selected>Silahkan Pilih</option>
+            <option value="1">Tidak, setahu kami tidak</option>
+            <option value="2">Kami belum mengetahuinya</option>
+            <option value="3">Ya, tapi hanya ringan sampai sedang </option>
+        </select>
+    
+        <label for="intrest">Kenapa anda tertarik mencari hewan?  <span class="required">*</span></label>
+        <input id="intrest" placeholder="Tuliskan sejujurnya" required></input>
+
+        </div>
+        <div class="right">
+
+            <label for="jenis-rumah">Jenis Rumah  <span class="required">*</span></label>
+            <select class="dropdown" name="jenis-rumah" required>
+                <option value="" disabled selected>Silahkan Pilih</option>
+                <option value="Rumah">Rumah</option>
+                <option value="Apartemen">Apartemen</option>
+                <option value="Kos">Kos</option>
+                <option value="Lainnya">Lainnya</option>
+            </select>
+    
+            <label for="Kepemilikian">Kepemilikian Rumah  <span class="required">*</span></label>
+            <select class="dropdown" name="Kepemilikian" required>
+                <option value="" disabled selected>Silahkan Pilih</option>
+                <option value="1">Rumah sendiri</option>
+                <option value="2">Rumah sewa</option>
+                <option value="3">Tinggal di rumah keluarga</option>
+            </select>
+            
+            <label for="halaman-rumah">Apakah anda memiliki halaman berpagar?  <span class="required">*</span></label>
+            <select class="dropdown" name="halaman" required>
+                <option value="" disabled selected>Silahkan Pilih</option>
+                <option value="1">Ya</option>
+                <option value="2">Tidak</option>
+                <option value="3">Belum, tapi kami akan memasang</option>
+                <option value="4">Tidak, tapi kami memiliki area bermain hewan</option>
+            </select>
+            
+            <label for="anakkecil">Berapa banyak anak kecil di rumah anda?  <span class="required">*</span></label>
+            <select class="dropdown" name="anakkecil" required>
+                <option value="" disabled selected>Silahkan Pilih</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3 atau lebih</option>
+            </select>
+
+            <label for="in-out">Akankah hewan ini menjadi hewan di dalam atau di luar?  <span class="required">*</span></label>
+            <select class="dropdown" name="in-out" required>
+                <option value="" disabled selected>Silahkan Pilih</option>
+                <option value="0">Kebanyakan di dalam ruangan</option>
+                <option value="1">Kebanyakan di luar ruangan</option>
+                <option value="2">Keduanya</option>
+            </select>
+
+            <label for="intrest">Dimana hewan ini akan menghabiskan sebagian besar waktunya?   <span class="required">*</span></label>
+            <input id="intrest" placeholder="Tuliskan sejujurnya" required></input>
+    </div>
+
+    </form>
+
+    <!--Komitmen Kepemilikan-->
+    <form class="form">
+        <h4>Komitmen Kepemilikan</h4>
+        <div class="left">
+            <label for="komit">Tempat kotoran hewan sudah akan tersedia saat hewan dibawa kerumah pada tanggal yang ditentukan di situs web. Bisakah anda membawa pulang hewan ini dalam waktu 2-3 hari dari waktu tersebut?  <span class="required">*</span></label>
+            <select class="dropdown" name="komit" required>
+                <option value="" disabled selected>Silahkan Pilih</option>
+                <option value="1">Ya</option>
+                <option value="2">Tidak, tolong hubungi saya agar kami dapat mengatur waktu lainnya</option>
+            </select>
+
+            <label for="komit">Bisakah anda menjemput hewan anda secara langsung di Shelter Kami? <span class="required">*</span></label>
+            <select class="dropdown" name="komit" required>
+                <option value="" disabled selected>Silahkan Pilih</option>
+                <option value="1">Ya, saya tinggal dalam jarak 50 km dari Lokasi</option>
+                <option value="2">Ya, saya tinggal dalam jarak 100 km dari Lokasi</option>
+                <option value="3">Ya, saya tinggal diluar lokasi bagian, tapi saya akan datang menjemput</option>
+                <option value="4">Saya perlu bantuan pengiriman</option>
+            </select>
+        
+            <label for="komit">Apakah anda setuju untuk menghubungi kami jika anda perlu mengembalikan kembali hewan ini karena alasan apa pun? <span class="required">*</span></label>
+            <select class="dropdown" name="komit" required>
+                <option value="" disabled selected>Silahkan Pilih</option>
+                <option value="1">Ya</option>
+                <option value="2">Tidak</option>
+            </select>
+
+        </div>
+        <div class="right">
+            <label for="komit">Hewan ini membutuhkan perawatan profesional. Setiap 3 minggu, dan biayanya Rp 250.000,00 setiap kali. Kurangnya perawatan dapat menyebabkan sakit yang serius. Apakah anda berkomitmen terhadap biaya yang diperlukan ini?  <span class="required">*</span></label>
+            <select class="dropdown" name="komit" required>
+                <option value="" disabled selected>Silahkan Pilih</option>
+                <option value="1">Baik. Kami akan melakukannya</option>
+                <option value="2">Saya butuh memikirkannya</option>
+            </select>
+           
+            <label for="komit"> Apakah anda setuju untuk memberikan kami laporan dan foto tindak lanjut dari waktu ke waktu?  <span class="required">*</span></label>
+            <select class="dropdown" name="komit" required>
+                <option value="" disabled selected>Silahkan Pilih</option>
+                <option value="1">Tentu</option>
+                <option value="2">Tidak</option>
+            </select>
+        </div>
+    </form>
+ 
+    <!--Lembar Persetujuan-->
+    <form class="form">
+            <h4>Lembar Persetujuan</h4>
+            <h5>
+                Saya dengan ini menyatakan bahwa saya telah memilih untuk mengadopsi hewan peliharaan yang telah dipilih. 
+                Saya menyadari bahwa adopsi ini bersifat permanen dan saya bertanggung jawab penuh atas kesejahteraan hewan tersebut.
+            </h5>
+            <div class="left">
+                <p>1. Perawatan Harian:</p>
+                <p>Saya akan memberikan makanan berkualitas dan segar, air minum yang bersih, serta lingkungan yang aman dan nyaman untuk hewan peliharaan saya.
+                    Saya akan memberikan perhatian, kasih sayang, dan interaksi sosial yang cukup sesuai dengan kebutuhan hewan peliharaan saya.
+                </p>
+                <p>2. Perawatan Kesehatan:</p>
+                <p>Saya akan memberikan perawatan medis yang diperlukan, termasuk vaksinasi, perawatan gigi, dan perawatan kesehatan lainnya sesuai dengan petunjuk dokter hewan.
+                    Saya akan membawa hewan peliharaan saya ke dokter hewan secara berkala untuk pemeriksaan kesehatan rutin.
+                </p>
+                <p>3. Kondisi Tempat Tinggal:</p>
+                <p>Saya menyediakan lingkungan yang aman dan nyaman di rumah saya untuk hewan peliharaan saya, termasuk tempat tidur yang hangat, bersih, dan kering.
+                    Saya akan memastikan bahwa hewan peliharaan saya memiliki akses yang cukup ke area bermain atau ruang terbuka yang aman.                    
+                </p>
+                <p>4. Kepatuhan Hukum:</p>
+                <p>Saya akan mematuhi peraturan dan ketentuan yang berlaku di tempat tinggal saya terkait dengan kepemilikan dan perawatan hewan peliharaan.
+                    Saya akan memastikan bahwa hewan peliharaan saya memiliki identifikasi yang sesuai, seperti cincin identifikasi atau mikrocip, sesuai dengan peraturan yang berlaku.                 
+                </p>
+
+                <label for="intrest">Berikan informasi relevan lainnya yang menuruta Anda akan membantu kami dalam menempatkan hewan di rumah anda!   <span class="required">*</span></label>
+            <input id="intrest" placeholder="Tuliskan sejujurnya" required></input>
+            </div>
+            <div class="right">
+                <p>5. Perawatan Selama Liburan atau Kehilangan:</p>
+                <p>Saya akan membuat pengaturan yang tepat untuk merawat hewan peliharaan saya saat saya pergi liburan atau tidak dapat merawatnya sendiri. Saya juga akan memberikan informasi kontak darurat kepada orang-orang yang dapat merawat hewan peliharaan jika saya tidak bisa merawatnya sendiri.
+                    </p>
+                <p>6. Pemutusan Kontrak:</p>
+                <p>Saya memahami bahwa adopsi hewan ini bersifat permanen, namun jika terjadi keadaan yang mengharuskan saya untuk tidak lagi merawat hewan peliharaan ini, saya akan mengembalikannya kepada pihak yang mengadopsi atau ke pihak yang berwenang.
+                </p>
+                <p>7. Kunjungan dan Peninjauan:</p>
+                <p>Saya setuju untuk memperbolehkan pihak yang mengadopsi untuk melakukan kunjungan atau peninjauan ke rumah saya untuk memastikan kesejahteraan hewan peliharaan saya. Ini penting demi kebahagiaan dan kesehatan hewan peliharaan yang saya adopsi.
+                </p>
+                <p>8. Pembaruan Informasi:</p>
+                <p>Saya akan memberikan informasi kontak yang dapat dihubungi kepada pihak yang mengadopsi untuk keperluan pembaruan atau komunikasi terkait hewan peliharaan saya.
+                    Saya dengan ini mengonfirmasi bahwa informasi yang saya berikan di atas adalah benar dan saya siap untuk mematuhi persyaratan dan tanggung jawab yang tercantum dalam lembar persetujuan ini.</p>
+                
+                <label for="intrest">Apakah Anda memiliki pertanyaan lain untuk kami yang ingin Anda sampaikan? <span class="required">*</span></label>
+                <input id="intrest" placeholder="Tuliskan sejujurnya" required></input>
+                </div>
+    
+    </form>
+
+    <!--Tanda Tangan-->
+    <form action="" class="form">
+        <h5>
+            Dengan ini saya secara sadar bertanda tangan
+        </h5>
+        <div id="signature-pad">
+            <canvas id="signature-canvas" width="500" height="200"></canvas>
+        </div>
+        <button type="button" onclick="clearCanvas()">Clear</button>
+        <button type="button" onclick="saveSignature()">Save</button>
+        <input type="hidden" id="signature" name="signature">
+    </form>
+    <form action="" class="form">
+        <div class="btn-container">
+            <button type="submit">Kirim Berkas</button>
+        </div>
+    </form>
+    </div>
+
+    <!--Footer-->
+<footer>
+    <div class="footer-logo">
+    <img src="img/icon-black.png" alt="Logo">
+  </div>
+  <div class="social-icons">
+    <a href="https://www.instagram.com/" target="_blank">
+      <i class="fab fa-instagram-square fa-2x"></i>
+    </a>
+    <a href="https://www.facebook.com/" target="_blank">
+      <i class="fab fa-facebook fa-2x"></i>
+    </a>
+    <a href="mailto:amanda11601@upi.edu" target="_blank">
+      <i class="fas fa-envelope fa-2x"></i>
+    </a>
+    <a href="https://wa.me/089506184100" target="_blank">
+      <i class="fab fa-whatsapp-square fa-2x"></i>
+    </a>
+  </div>
+  
+  <div class="copyright">
+    &copy; 2024 PetAndShelter. All Rights Reserved.
+  </div>
+  </footer>
+
+  <script src="adopsi.js"></script>
+</body>
+</html>
+  
+
+
+
+
+
