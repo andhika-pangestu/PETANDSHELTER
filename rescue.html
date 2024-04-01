@@ -10,15 +10,15 @@
     <body>
           <!-- Navbar -->
         <nav class="navbar">
-            <img src="img/icon-black.png" alt="Logo" class="navbar-logo">
+            <a href="index.html"><img src="img/icon-black.png" alt="Logo" class="navbar-logo"></a>
             <div class="navbar-submenu">
                 <a href="#">Donasi</a>
                 <a href="#">Tentang</a>
                 <a href="adopsi.html" target="_blank" >Adopsi</a>
                 <a href="kalender.html" target="_blank">Acara</a>
-                <a href="#">Shelter</a>
+                <a href="shelter.html">Shelter</a>
                 <a href="#">Tips</a>
-                <a href="#">Rescue</a>
+                <a href="rescue.html">Rescue</a>
             </div>
         </nav>
 
@@ -32,7 +32,7 @@
                 </p>
                 <p class="hero-desc">
                     You can Help us Achieving Our Goal by Submitting Form Below to Provide Them with Shelter And Care
-                    <a href="#"><button class="button" style="text-decoration: none;"><div class="fill-button">Fill-out Form</div></button></a>
+                    <a href="#form"><button class="button" style="text-decoration: none;"><div class="fill-button">Fill-out Form</div></button></a>
                 </p>
             </div>
                 <div class="hero-box2">
@@ -42,11 +42,11 @@
 
         <!-- section 1 -->
         <div class="section1">
-            <h1>Yap Title</h1>
+            <h1>Data Shelter Kami</h1>
             <div class="section1-content">
               <div class="stats">
-                <div class="stat stat1"><div class="data-percent">90%</div>Data about Rescue animal</div>
-                <div class="stat stat2"><div class="data-percent">90%</div>Data about Rescue animal</div>
+                <div class="stat stat1"><div class="data-percent">100</div>Hewan Terselamatkan</div>
+                <div class="stat stat2"><div class="data-percent">91</div>Hewan Diadopsi</div>
               </div>
               <!-- <img src="img/popup-cat.png" alt="Cat Image"> -->
               <p>Our Shelter is Trustable and Cool and Awesome and Overall will be the best experience for the little ones.</p>
@@ -59,14 +59,14 @@
                   <img src="img/curios-cat.png" alt="A cat">
                 </div>
                 <div class="text-container">
-                  <h1>Yap Title</h1>
-                  <p>Lorem lorem lorem lorem lorem...</p>
+                  <h1>See our shelter </h1>
+                  <p>Rescue hewan hanya bisa dilakukan pada shelter karena</p>
                   <ul>
-                    <li>reason</li>
-                    <li>reason</li>
-                    <li>reason</li>
+                    <li>memastikan keadaan hewan</li>
+                    <li>lebih cepat memberi pertolongan pertama</li>
+                    <li>efektifitas rescue</li>
                   </ul>
-                  <a href="#"><button class="shelter-button"><div class="button-shelter">Shelter</div></button></a>
+                  <a href="shelter.html"><button class="shelter-button"><div class="button-shelter">Shelter</div></button></a>
                 </div>
               </div>
             
@@ -80,33 +80,65 @@
             <div class="wrapper-section3">
             </div> -->
 
-            <div class="section-3">
-
-                <h1>Rescue Form </h1>
-
-                <form action="">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Your Email">
-                    <label for="phone">Phone</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Your Phone">
-                    <label for="address">Address</label>
-                    <input type="text" id="address" name="address" placeholder="Your Address">
-                    <label for="animal">Animal</label>
-                    <input type="text" id="animal" name="animal" placeholder="Animal Name">
-                    <label for="description">Description</label>
-                    <textarea id="description" name="description" placeholder="Description"></textarea>
-                    <button type="submit">Submit</button>
+            <div class="section-3" id="form">
+                
+                <form class="form">
+                    <h2> RESCUE FORM </h2>
+                    <h4>A. Identifikasi</h4>
+                    <div class="left">
+                        <label for="nama_hewan">Nama Hewan <span class="required">*</span></label>
+                        <input id="nama_hewan" placeholder="Mamen" required></input>
+                        <label for="jenis_hewan">Jenis Hewan  <span class="required">*</span></label>
+                        <input id="jenis_hewan" placeholder="kucing, anjing, kelinci" required></input>
+                    </div>
+                    <div class="right">
+                        <label for="warna_hewan">Warna Hewan  <span class="required">*</span></label>
+                        <input id="warna_hewan" placeholder="biru tua" required></input>
+                    </div>
+                  <h4>B. Kondisi Fisik</h4>
+                  <div class="left">
+                      <label for="kondisi_hewan">Kondisi Saat Ditemukan <span class="required">*</span></label>
+                      <input id="kondisi_hewan" placeholder="luka" required></input>
+                      <label for="beratbadan_hewan">Berat Badan Hewan  <span class="required">*</span></label>
+                      <input id="beratbadan_hewan" placeholder="5kg" required></input>
+                  </div>
+                  <h4>C. Informasi Tentang Penemuan</h4>
+                  <div class="left">
+                      <label for="info_lokasi">Tanggal dan Lokasi Penemuan atau Penyelamatan <span class="required">*</span></label>
+                      <input id="info_lokasi" placeholder="deskripsikan lokasi dan kapan diselamatkan" required></input>
+                      <label for="kondisi_lingkungan">Kondisi Lingkungan Saat Ditemukan  <span class="required">*</span></label>
+                      <input id="kondisi_lingkungan" placeholder="deskripsikan kondisi TKP" required></input>
+                  </div>
+                  <h4>D. Fotografi</h4>
+                  <div class="left">
+                      <label for="foto_hewan">Foto Hewan <span class="required">*</span></label>
+                      <input id="foto_hewan" placeholder="" required></input>
+                      <label for="foto_lokasi">Foto lokasi Hewan  <span class="required">*</span></label>
+                      <input id="foto_lokasi" placeholder="" required></input>
+                  </div>
+                  <h4>E. Data Identitas Pelapor</h4>
+                  <div class="left">
+                      <label for="nama_pelapor">Nama pelapor <span class="required">*</span></label>
+                      <input id="nama_pelapor" placeholder="Maman" required></input>
+                      <label for="jenis_kelamin">Jenis Kelamin  <span class="required">*</span></label>
+                      <input id="jenis_kelamin" placeholder="laki-laki" required></input>
+                  </div>
+                  <div class="right">
+                      <label for="usia">Usia <span class="required">*</span></label>
+                      <input id="usia" placeholder="22 tahun" required></input>
+                      <label for="no_telp">Nomor Telepon Aktif<span class="required">*</span></label>
+                      <input id="no_telp" placeholder="082939291283" required></input>
+                  </div>
+                <button type="submit" class="button">Submit</button>
 
                 </form>
-
+            </div>
 
 
 
     </body>
     <!--Footer-->
-<!-- <footer>
+<footer>
     <div class="footer-logo">
     <img src="img/icon-black.png" alt="Logo">
   </div>
@@ -119,5 +151,5 @@
   <div class="copyright">
     &copy; 2024 PetAndShelter. All Rights Reserved.
   </div>
-</footer> -->
+</footer>
 </html>
