@@ -292,4 +292,13 @@ footer {
     color: #888;
     text-align: center; /* Menyusun teks menjadi rata tengah */
   }
-  
+h3 {
+    color: #000;
+
+/* heading/3 */
+font-family: "Helvetica Rounded";
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}

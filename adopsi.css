@@ -7,6 +7,8 @@ body {
     margin: 0;
     padding: 0;
 }
+
+/* Navbar */
 .navbar {
   background-color: #fff;
   overflow: hidden;
@@ -14,10 +16,12 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+
   padding: 9px 85px 9px 66px;
   align-items: center;
   gap: 380px;
   flex-shrink: 0;
+
   position: fixed;
   z-index: 1000;
   width: 93%;
@@ -29,6 +33,7 @@ body {
     background-color: rgba(255, 255, 255, 0.8);/* Warna latar belakang solid saat di-scroll */
   }
   
+
 .navbar-logo {
   width: 100px;
   height: auto;
@@ -63,16 +68,20 @@ body {
   background-size: cover;
   background-position: center;
   color: white;
+
   padding-top: 100px; /* Atur padding-top agar konten di bawah navbar tidak tertutupi */
 }
+
 
 .text {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+
   left: 70px;
   text-align: left;
 }
+
 
 .text h1 {
   font-size: 36px;
@@ -239,6 +248,7 @@ body {
   margin: 0;
 }
 
+
 header {  
   align-items: center;
   text-align: center;
@@ -253,10 +263,12 @@ header {
 }
 
 .section3  h4 {
+=
   font-family: Helvetica;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
+
   margin-bottom: 5px; /* Mengurangi margin bottom */
   line-height: 1; /* Mengatur line height menjadi 1 */
   width: 490px;
@@ -315,10 +327,12 @@ header {
 }
 
 .section3-card .card a {
+
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: 160%; /* 32px */
+
   border-radius: 30px;
   background: #FFF;
   color: #F1B703;
